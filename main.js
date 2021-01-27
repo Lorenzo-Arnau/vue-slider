@@ -15,7 +15,6 @@ var app = new Vue({
         this.index++
       if (this.index === this.imgList.length) {
         this.index = 0
-
       }
       console.log(this.index);
       return this.index
