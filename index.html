@@ -22,7 +22,7 @@
                     <i class="fas fa-angle-right"></i>
                 </div>
                 <div class="nav">
-                    <i :class="isActive(indx)" v-for="(img,indx) in imgList.length" @click=changePic(indx)></i>
+                    <i :class="isActive(i)" v-for="(img,i) in imgList.length" @click=changePic(i)></i>
                 </div>
             </div>
         </div>
