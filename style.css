@@ -21,12 +21,10 @@
     text-align: center;
 }
 .slider-wrapper .images img {
-    display: none;
+    display:  inline-block;
     height: 100%;
 }
-.slider-wrapper .images img.active {
-    display: inline-block;
-}
+
 .prev, .next {
     position: absolute;
     color: #565a5c;
