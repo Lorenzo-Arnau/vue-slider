@@ -8,12 +8,14 @@ var app = new Vue({
      'https://static.photocdn.pt/images/articles/2017/04/28/iStock-546424192.jpg'
    ],
    index : 0,
+   active: 'active',
  },
  methods:{
     next: function(){
-      this.index++
+        this.index++
       if (this.index === this.imgList.length) {
         this.index = 0
+
       }
       console.log(this.index);
       return this.index
@@ -25,6 +27,16 @@ var app = new Vue({
       }
       console.log(this.index);
       return this.index
+    },
+    isActive: function(i){
+      if (i == this.index) {
+        return 'fas fa-circle active'
+      }else {
+        return 'fas fa-circle'
+      }
+    },
+    changePic:function(i){
+      this.index = i
     }
  },
 });
